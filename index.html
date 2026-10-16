@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S'ana | NAIL SALON</title>
+<meta name="description" content="S'ana（サナ）ネイルサロン。お一人おひとりの爪の状態とライフスタイルに合わせて、持ちの良さとデザインを両立したネイルをご提案します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --accent:#8A5A63;
+  --ink:#2B2420;
+  --ink-2:#4A3F39;
+  --muted:#6B5E57;
+  --ground:#F4EFEA;
+  --paper:#FFFFFF;
+  --sand:#EAE2DB;
+  --line:#D9CEC6;
+  --serif:'Cormorant Garamond',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;line-height:1.9;letter-spacing:.04em}
+a{color:var(--ink)}a:hover{color:#6E4A51}
+p,h1,h2,h3,dl,dd{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding-left:48px;padding-right:48px}
+.serif{font-family:var(--serif)}
+.eyebrow{font-family:var(--serif);font-size:40px;letter-spacing:.12em;line-height:1.2}
+.sub{font-size:13px;color:var(--muted)}
+.ph{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;letter-spacing:.1em;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-decoration:none;border-radius:999px;font-size:14px;letter-spacing:.15em}
+
+/* header */
+header.site{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:28px}
+.logo{font-family:var(--serif);font-size:34px;font-weight:500;letter-spacing:.08em;text-decoration:none;line-height:1}
+.logo small{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:10px;letter-spacing:.3em;margin-top:6px;color:var(--muted)}
+nav.main{display:flex;flex-wrap:wrap;align-items:center;gap:32px;font-size:13px;letter-spacing:.15em}
+nav.main a{text-decoration:none}
+nav.main .reserve{background:var(--accent);color:#fff;padding:12px 26px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+
+/* hero */
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:64px;align-items:center;padding-top:24px;padding-bottom:96px}
+.hero-copy{display:flex;flex-direction:column;gap:28px}
+.hero-copy .tag{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
+.hero-copy h1{font-size:46px;font-weight:500;line-height:1.55;letter-spacing:.08em}
+.hero-copy .lead{max-width:420px;color:var(--ink-2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.btn-dark{background:var(--ink);color:var(--ground);padding:16px 36px}
+.btn-dark:hover{color:var(--ground);opacity:.88}
+.btn-line{border:1px solid var(--ink);padding:15px 32px}
+.hero-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hero-photos .main{grid-row:span 2;aspect-ratio:3/4.6;background:#DCCFC6;border-radius:200px 200px 8px 8px}
+.hero-photos .sq{aspect-ratio:1/1;border-radius:8px}
+
+/* concept */
+.concept{background:var(--paper)}
+.concept .inner{max-width:880px;margin:0 auto;padding:112px 48px;text-align:center;display:flex;flex-direction:column;gap:24px;align-items:center}
+.concept h2{font-size:24px;font-weight:500;letter-spacing:.1em}
+.concept .body{color:var(--ink-2);max-width:620px}
+
+/* sections */
+.sec{padding-top:112px;padding-bottom:112px;display:flex;flex-direction:column;gap:48px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px}
+.sec-head .more{font-size:13px;letter-spacing:.1em;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+
+/* menu */
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:var(--paper);border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:12px}
+.card .num{font-family:var(--serif);font-size:18px;color:var(--accent)}
+.card h3{font-size:18px;font-weight:500}
+.card .desc{font-size:13px;color:var(--ink-2)}
+.card .price{margin-top:8px;font-size:20px;font-weight:500}
+
+/* gallery */
+.gallery{background:var(--sand)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.shots .ph{aspect-ratio:1/1;border-radius:6px;color:var(--ink-2)}
+
+/* reserve */
+.reserve-box{background:var(--ink);color:var(--ground);border-radius:16px;padding:72px 48px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.reserve-box .note{color:#D9CEC6}
+.reserve-box .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:12px}
+.btn-light{background:var(--ground);color:var(--ink);padding:18px 40px;letter-spacing:.12em}
+.btn-light:hover{color:var(--ink);opacity:.9}
+.btn-ghost{border:1px solid var(--ground);color:var(--ground);padding:17px 36px;letter-spacing:.12em}
+.btn-ghost:hover{color:var(--ground);background:rgba(244,239,234,.08)}
+
+/* access */
+.access{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center;padding-bottom:112px}
+.access .info{display:flex;flex-direction:column;gap:20px}
+.access dl{display:grid;grid-template-columns:96px 1fr;row-gap:14px;font-size:14px}
+.access dt{color:var(--muted)}
+.access .map{aspect-ratio:16/10;background:#DCCFC6;border-radius:12px;color:var(--ink-2)}
+
+/* footer */
+footer.site{border-top:1px solid var(--line)}
+footer.site .wrap{padding-top:40px;padding-bottom:40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:12px;color:var(--muted)}
+footer.site .brand{font-family:var(--serif);font-size:24px;color:var(--ink);letter-spacing:.08em}
+
+/* phone bottom bar */
+.bottom-bar{display:none}
+
+@media (max-width:720px){
+  body{font-size:14px}
+  .wrap{padding-left:20px;padding-right:20px}
+  header.site{padding-top:18px;padding-bottom:18px}
+  .logo{font-size:28px}
+  .logo small{display:none}
+  nav.main{gap:18px;font-size:11px;letter-spacing:.1em}
+  nav.main .reserve{display:none}
+  .hero{gap:28px;padding-top:8px;padding-bottom:64px}
+  .hero-photos{order:-1}
+  .hero-photos .main{border-radius:180px 180px 8px 8px}
+  .hero-copy{gap:16px}
+  .hero-copy .tag{font-size:18px}
+  .hero-copy h1{font-size:30px;line-height:1.6}
+  .hero-cta{display:none}
+  .concept .inner{padding:72px 24px;gap:16px}
+  .concept h2{font-size:18px}
+  .concept .body{font-size:13px}
+  .eyebrow{font-size:32px}
+  .sec{padding-top:72px;padding-bottom:72px;gap:24px}
+  .card{padding:20px 22px}
+  .shots{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .reserve-box{padding:56px 24px}
+  .access{gap:20px;padding-bottom:72px}
+  .access dl{grid-template-columns:80px 1fr;font-size:13px}
+  footer.site{padding-bottom:84px}
+  .bottom-bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--ground);border-top:1px solid var(--line);z-index:10}
+  .bottom-bar a{flex:1;min-height:52px;font-size:14px;letter-spacing:.1em}
+  .bottom-bar .primary{background:var(--accent);color:#fff}
+  .bottom-bar .secondary{border:1px solid var(--ink)}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap site">
+  <a href="#top" class="logo">S'ana<small>NAIL SALON</small></a>
+  <nav class="main" aria-label="メインメニュー">
+    <a href="#concept">CONCEPT</a>
+    <a href="#menu">MENU</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#access">ACCESS</a>
+    <a href="#reserve" class="reserve">ご予約</a>
+  </nav>
+</header>
+
+<main>
+<section id="top" class="wrap hero">
+  <div class="hero-copy">
+    <p class="tag">for your fingertips</p>
+    <h1>指先から、<br>毎日をすこし<br>特別に。</h1>
+    <p class="lead">お一人おひとりの爪の状態とライフスタイルに合わせて、持ちの良さとデザインを両立したネイルをご提案します。</p>
+    <div class="hero-cta">
+      <a href="#reserve" class="btn btn-dark">ネット予約はこちら</a>
+      <a href="#gallery" class="btn btn-line">デザインを見る</a>
+    </div>
+  </div>
+  <div class="hero-photos">
+    <div class="ph main">メイン写真（Instagramより）</div>
+    <div class="ph sq" style="background:#E6D9D3">ネイル写真</div>
+    <div class="ph sq" style="background:#D2C4BC;color:#4A3F39">店内写真</div>
+  </div>
+</section>
+
+<section id="concept" class="concept">
+  <div class="inner">
+    <p class="eyebrow">Concept</p>
+    <h2>ていねいなケアが、美しさを長持ちさせる。</h2>
+    <p class="body">S'anaでは、デザインの前のケアを何より大切にしています。浮きにくく、伸びても綺麗な指先で、次のご来店まで心地よく過ごしていただけるように。[オーナーの想い・サロンの特徴をここに]</p>
+  </div>
+</section>
+
+<section id="menu" class="wrap sec">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow">Menu</p>
+      <p class="sub">人気のメニュー</p>
+    </div>
+    <a href="#reserve" class="more">すべてのメニューを見る →</a>
+  </div>
+  <div class="menu-grid">
+    <div class="card">
+      <p class="num">01</p>
+      <h3>ワンカラー</h3>
+      <p class="desc">シンプルだから、ケアと仕上がりの差が出る。オフィスにも。</p>
+      <p class="price">¥[料金]〜</p>
+    </div>
+    <div class="card">
+      <p class="num">02</p>
+      <h3>定額デザイン</h3>
+      <p class="desc">季節ごとのサンプルから選べる、迷わないデザインコース。</p>
+      <p class="price">¥[料金]〜</p>
+    </div>
+    <div class="card">
+      <p class="num">03</p>
+      <h3>フットネイル</h3>
+      <p class="desc">サンダルの季節も、足元まで自信を。角質ケアの追加も可能。</p>
+      <p class="price">¥[料金]〜</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Gallery</p>
+        <p class="sub">最新のデザインはInstagramで更新中</p>
+      </div>
+      <a href="#instagram" class="more"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8"></circle></svg>@sana_nailsalon</a>
+    </div>
+    <div class="shots">
+      <div class="ph" style="background:#D8C9C0">デザイン写真</div>
+      <div class="ph" style="background:#E3D3CD">デザイン写真</div>
+      <div class="ph" style="background:#CDBFB6">デザイン写真</div>
+      <div class="ph" style="background:#E0D6CE">デザイン写真</div>
+      <div class="ph" style="background:#D4C2BE">デザイン写真</div>
+      <div class="ph" style="background:#DDD0C4">デザイン写真</div>
+    </div>
+  </div>
+</section>
+
+<section id="reserve" class="wrap sec">
+  <div class="reserve-box">
+    <p class="eyebrow">Reservation</p>
+    <p class="note">ご予約はホットペッパービューティーから24時間受付中です。<br>はじめての方向けクーポンもご用意しています。</p>
+    <div class="actions">
+      <a href="#hotpepper" class="btn btn-light">ホットペッパーで予約する</a>
+      <a href="#instagram" class="btn btn-ghost">InstagramでDM相談</a>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="wrap access">
+  <div class="info">
+    <p class="eyebrow">Access</p>
+    <dl>
+      <dt>住所</dt><dd>[住所]</dd>
+      <dt>アクセス</dt><dd>[最寄り駅から徒歩◯分]</dd>
+      <dt>営業時間</dt><dd>[営業時間]</dd>
+      <dt>定休日</dt><dd>[定休日]</dd>
+    </dl>
+  </div>
+  <div class="ph map">Googleマップ</div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="brand">S'ana</span>
+    <span>© S'ana nail salon</span>
+  </div>
+</footer>
+
+<div class="bottom-bar">
+  <a href="#hotpepper" class="btn primary">ネット予約</a>
+  <a href="#instagram" class="btn secondary">DMで相談</a>
+</div>
+
+</body>
+</html>
